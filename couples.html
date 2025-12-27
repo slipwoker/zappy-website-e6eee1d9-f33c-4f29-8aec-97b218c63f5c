@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang='he' dir='rtl'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>רחלי קושי-בת-חן - אימון זוגי</title><style>
+
+/* Zappy Full-Width Override - outermost structure only */
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* Only direct children of body - the main page wrapper */
+body > header,
+body > main,
+body > footer,
+body > section,
+body > nav,
+body > article,
+body > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; } html, body { width: 100%; min-height: 100vh; overflow-x: hidden; font-family: 'Heebo', 'Arial', sans-serif; } :root { --primary-color: #7a9b8e; --secondary-color: #2c2c2c; --accent-color: #d4a574; --text-dark: #333333; --text-light: #ffffff; --bg-light: #f5f5f5; } body { direction: rtl; } header { background-color: #000000; padding: 15px 0; position: relative; z-index: 1000; } .header-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; } .logo { max-width: 180px; } .logo img { width: 100%; height: auto; } nav ul { display: flex; list-style: none; gap: 30px; align-items: center; } nav ul li a { color: var(--text-light); text-decoration: none; font-size: 14px; transition: color 0.3s; } nav ul li a:hover { color: var(--accent-color); } .social-icons { display: flex; gap: 15px; align-items: center; } .social-icons a { color: var(--text-light); font-size: 16px; text-decoration: none; transition: color 0.3s; } .social-icons a:hover { color: var(--accent-color); } .mobile-menu-toggle { display: none; background: none; border: none; color: var(--text-light); font-size: 24px; cursor: pointer; } .hero-section { background-color: var(--primary-color); padding: 80px 20px; text-align: center; position: relative; overflow: hidden; } .hero-section::before { content: ''; position: absolute; top: 0; left: 0; width: 150px; height: 150px; background-image: url('/assets/site-home-bg-25.webp'); background-size: contain; background-repeat: no-repeat; opacity: 0.3; } .hero-section::after { content: ''; position: absolute; bottom: 0; right: 0; width: 200px; height: 200px; background-image: url('/assets/site-home-bg-25.webp'); background-size: contain; background-repeat: no-repeat; opacity: 0.3; } .hero-section h1 { color: var(--text-light); font-size: 48px; font-weight: 300; position: relative; z-index: 1; } .intro-section { background-color: var(--bg-light); padding: 60px 20px; text-align: center; } .intro-section h2 { color: var(--primary-color); font-size: 32px; margin-bottom: 30px; font-weight: 400; } .intro-section p { color: var(--text-dark); font-size: 16px; line-height: 1.8; max-width: 800px; margin: 0 auto 20px; } .services-grid-section { background-color: #000000; padding: 60px 20px; position: relative; } .services-grid-section h2 { color: var(--text-light); text-align: center; font-size: 28px; margin-bottom: 40px; } .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; } .service-card { background-color: var(--text-light); padding: 30px 20px; text-align: center; border-radius: 8px; transition: transform 0.3s; } .service-card:hover { transform: translateY(-5px); } .service-icon { font-size: 40px; margin-bottom: 15px; color: var(--primary-color); } .service-card h3 { color: var(--text-dark); font-size: 14px; font-weight: 400; line-height: 1.6; } .platform-logos { display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 40px; flex-wrap: wrap; } .platform-logos img { height: 30px; filter: brightness(0) invert(1); opacity: 0.7; } .benefits-section { background-color: var(--bg-light); padding: 60px 20px; } .benefits-section h2 { color: var(--primary-color); text-align: center; font-size: 32px; margin-bottom: 40px; font-weight: 400; } .benefits-list { max-width: 800px; margin: 0 auto; } .benefit-item { background-color: var(--text-light); padding: 25px; margin-bottom: 20px; border-right: 4px solid var(--primary-color); font-size: 16px; line-height: 1.8; color: var(--text-dark); } .cta-section { background-color: var(--primary-color); padding: 80px 20px; text-align: center; position: relative; overflow: hidden; } .cta-section::before { content: ''; position: absolute; top: -50px; right: -50px; width: 250px; height: 250px; background-image: url('/assets/site-home-bg-25.webp'); background-size: contain; background-repeat: no-repeat; opacity: 0.2; } .cta-content { position: relative; z-index: 1; } .profile-circle { width: 250px; height: 250px; border-radius: 50%; overflow: hidden; margin: 0 auto 30px; border: 8px solid var(--text-light); } .profile-circle img { width: 100%; height: 100%; object-fit: cover; } .steps-list { max-width: 600px; margin: 40px auto; text-align: right; } .step-item { background-color: rgba(255, 255, 255, 0.95); padding: 20px 30px; margin-bottom: 15px; border-radius: 8px; display: flex; align-items: center; gap: 20px; } .step-number { background-color: var(--accent-color); color: var(--text-light); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; } .step-text { color: var(--text-dark); font-size: 15px; line-height: 1.6; text-align: right; } .video-section { background-color: #2c2c2c; padding: 80px 20px; position: relative; } .video-section::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/assets/site-home-bg-26.webp'); background-size: cover; background-position: center; } .video-container { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; } .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background-color: #000000; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); } .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } .video-title { color: var(--text-light); text-align: center; font-size: 32px; margin-bottom: 40px; font-weight: 300; } .contact-cta-section { background-color: var(--bg-light); padding: 60px 20px; text-align: center; } .contact-cta-section h2 { color: var(--primary-color); font-size: 28px; margin-bottom: 20px; } .contact-cta-section p { color: var(--text-dark); font-size: 16px; margin-bottom: 30px; } .social-buttons { display: flex; justify-content: center; gap: 20px; } .social-button { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; text-decoration: none; transition: transform 0.3s; } .social-button.instagram { background-color: #E1306C; color: var(--text-light); } .social-button.facebook { background-color: #1877F2; color: var(--text-light); } .social-button:hover { transform: scale(1.1); } .final-cta { margin-top: 30px; font-size: 14px; color: var(--text-dark); } .final-cta a { color: var(--primary-color); text-decoration: none; font-weight: bold; } footer { background-color: #000000; padding: 60px 20px 30px; color: var(--text-light); } .footer-container { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; } .footer-section h3 { color: var(--accent-color); font-size: 18px; margin-bottom: 20px; } .footer-section ul { list-style: none; } .footer-section ul li { margin-bottom: 10px; } .footer-section ul li a { color: var(--text-light); text-decoration: none; font-size: 14px; transition: color 0.3s; } .footer-section ul li a:hover { color: var(--accent-color); } .footer-logo { max-width: 200px; margin-bottom: 20px; } .footer-social { display: flex; gap: 15px; margin-top: 20px; } .footer-social a { color: var(--text-light); font-size: 20px; text-decoration: none; transition: color 0.3s; } .footer-social a:hover { color: var(--accent-color); } .footer-bottom { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; font-size: 12px; color: #888; } @media (max-width: 768px) { .header-container { flex-wrap: wrap; } nav { display: none; width: 100%; order: 3; } nav.active { display: block; } nav ul { flex-direction: column; gap: 15px; padding: 20px 0; } .mobile-menu-toggle { display: block; } .hero-section h1 { font-size: 32px; } .intro-section h2 { font-size: 24px; } .services-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; } .service-card { padding: 20px 15px; } .service-icon { font-size: 30px; } .service-card h3 { font-size: 12px; } .benefits-section h2 { font-size: 24px; } .profile-circle { width: 200px; height: 200px; } .steps-list { padding: 0 10px; } .step-item { flex-direction: row; padding: 15px; } .step-number { width: 35px; height: 35px; font-size: 14px; } .step-text { font-size: 14px; } .video-title { font-size: 24px; } .footer-container { grid-template-columns: 1fr; gap: 30px; text-align: center; } .footer-social { justify-content: center; } } </style><!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'e6eee1d9-f33c-4f29-8aec-97b218c63f5c',
+    apiUrl: 'http://localhost:5001/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head><body><header><div class='header-container'><div class='logo'><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgODAwIDYwMCI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2Y4ZmFmYyIvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZTJlOGYwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNiZykiLz4KICAgICAgPHJlY3QgeD0iMzIwIiB5PSIyMjAiIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIiByeD0iMjAiIGZpbGw9IiM2MTYxRkYiIG9wYWNpdHk9IjAuMTUiLz4KICAgICAgPHRleHQgeD0iNDAwIiB5PSIzMTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjE2MUZGIj5aPC90ZXh0PgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjQyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzY0NzQ4YiI+16jXl9ec15kg16fXldep15kg15HXqiDXl9efPC90ZXh0PgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjQ1MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzk0YTNiOCI+Q2xpY2sgdG8gcmVwbGFjZSBpbWFnZTwvdGV4dD4KICAgIDwvc3ZnPg==" alt='רחלי קושי-בת-חן'></div><button class='mobile-menu-toggle' aria-label='תפריט'>☰</button><nav><ul><li><a href='/'>בית</a></li><li><a href='/about-me'>אודות</a></li><li><a href='/coaching'>אימון אישי</a></li><li><a href='/business-coaching'>אימון עסקי</a></li><li><a href='/couples'>אימון זוגי</a></li><li><a href='/small-biz'>כנס עסקים</a></li><li><a href='/podcasts'>פודקאסטים</a></li><li><a href='/contact'>צור קשר</a></li></ul></nav><div class='social-icons'><a href='#' aria-label='אינסטגרם'>📷</a><a href='#' aria-label='פייסבוק'>f</a><a href='#' aria-label='אימייל'>✉</a></div></div></header><main><section class='hero-section'><h1>אימון זוגי</h1></section><section class='intro-section'><h2>מהו בעצם אימון זוגי?</h2><p>אימון זוגי הוא לקוחות במגוון ואופציות כגון זוג שעושה שותפות בעסקים ורוצים לחזק את הקשר ביניהם, זוג שעושה שותפות בחיים ורוצה לחזק את הקשר ביניהם, זוג שרוצה לעבוד על מערכת היחסים שלו או אחים שרוצים לעבוד על מערכת היחסים ביניהם.</p><p>אימון זוגי אינו טיפול זוגי! אימון זוגי משלב טכניקות מעולם אימון NLP ומשלב שיטות דבר שונות לכן שונה מטיפול זוגי לגמרי ומתאים לזוגות שרוצים לשפר את הקשר ביניהם.</p><p>עד שאתה אומד את אחד שלך בעצם – זה אומר את הדרך לשיפור ולא את הדרך לשיפור</p></section><section class='services-grid-section'><h2>מה זוג יכול לקבל בעצם באימון זוגי?</h2><div class='services-grid'><div class='service-card'><div class='service-icon'>💬</div><h3>שיחה</h3></div><div class='service-card'><div class='service-icon'>🎯</div><h3>מטרות</h3></div><div class='service-card'><div class='service-icon'>🔍</div><h3>בדיקה</h3></div><div class='service-card'><div class='service-icon'>📊</div><h3>ניתוח</h3></div><div class='service-card'><div class='service-icon'>💡</div><h3>כלים</h3></div><div class='service-card'><div class='service-icon'>🎓</div><h3>למידה</h3></div><div class='service-card'><div class='service-icon'>🤝</div><h3>שיתוף</h3></div><div class='service-card'><div class='service-icon'>⚡</div><h3>פעולה</h3></div><div class='service-card'><div class='service-icon'>🌟</div><h3>שינוי</h3></div><div class='service-card'><div class='service-icon'>📈</div><h3>צמיחה</h3></div><div class='service-card'><div class='service-icon'>🎪</div><h3>חוויה</h3></div><div class='service-card'><div class='service-icon'>🔄</div><h3>תהליך</h3></div><div class='service-card'><div class='service-icon'>✨</div><h3>התפתחות</h3></div><div class='service-card'><div class='service-icon'>🎭</div><h3>הבנה</h3></div><div class='service-card'><div class='service-icon'>🌈</div><h3>חיבור</h3></div><div class='service-card'><div class='service-icon'>💪</div><h3>חיזוק</h3></div><div class='service-card'><div class='service-icon'>🎁</div><h3>מתנה</h3></div><div class='service-card'><div class='service-icon'>📱</div><h3>תקשורת</h3></div></div><div class='platform-logos'><span style="color: white; font-size: 20px;">🎥 ZOOM</span><span style="color: white; font-size: 20px;">📺 SKYPE</span><span style="color: white; font-size: 20px;">💬 WHATSAPP</span><span style="color: white; font-size: 20px;">📞 PHONE</span></div></section><section class='benefits-section'><h2>למה מתאים אימון זוגי</h2><div class='benefits-list'><div class='benefit-item'>אימון זוגי יכול להתאים לזוגות שעושים לזוגות שעושים, שותפויות עסקיות, אחים/אחיות, חברים-ידידים, זוגות שרוצים לחזק את מערכת היחסים ביניהם, זוגות שרוצים לעבוד על מערכת היחסים ביניהם, זוגות שרוצים לעבוד על תקשורת ביניהם, זוגות שרוצים לעבוד על אמון ביניהם, זוגות שרוצים לעבוד על אמון ביניהם לעבוד על אמון ביניהם לעבוד על אמון ביניהם לעבוד על אמון ביניהם.</div><div class='benefit-item'>אימון זוגי אינו טיפול זוגי! אימון זוגי משלב טכניקות מעולם אימון NLP ומשלב שיטות דבר שונות לכן שונה מטיפול זוגי לגמרי ומתאים לזוגות שרוצים לשפר את הקשר ביניהם.</div><div class='benefit-item'>עד שאתה אומד את אחד שלך בעצם – זה אומר את הדרך לשיפור</div></div></section><section class='cta-section'><div class='cta-content'><div class='profile-circle'><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgODAwIDYwMCI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2Y4ZmFmYyIvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZTJlOGYwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNiZykiLz4KICAgICAgPHJlY3QgeD0iMzIwIiB5PSIyMjAiIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIiByeD0iMjAiIGZpbGw9IiM2MTYxRkYiIG9wYWNpdHk9IjAuMTUiLz4KICAgICAgPHRleHQgeD0iNDAwIiB5PSIzMTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjE2MUZGIj5aPC90ZXh0PgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjQyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzY0NzQ4YiI+UHJvZmVzc2lvbmFsIHBvcnRyYWl0IG9mIFJhY2hlPC90ZXh0PgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjQ1MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzk0YTNiOCI+Q2xpY2sgdG8gcmVwbGFjZSBpbWFnZTwvdGV4dD4KICAgIDwvc3ZnPg==" alt='רחלי קושי-בת-חן'></div><div class='steps-list'><div class='step-item'><div class='step-number'>1</div><div class='step-text'>לא צריך להיות מומחה</div></div><div class='step-item'><div class='step-number'>2</div><div class='step-text'>שיחה ראשונה היא שיחת היכרות לחלוטין לא מחייבת אז אין צורך להיות מוכנים</div></div><div class='step-item'><div class='step-number'>3</div><div class='step-text'>אימון זוגי אינו טיפול זוגי! אימון זוגי משלב טכניקות מעולם אימון NLP ומשלב שיטות דבר שונות</div></div><div class='step-item'><div class='step-number'>4</div><div class='step-text'>אימון זוגי יכול להתאים לזוגות שעושים שותפויות עסקיות, אחים/אחיות, חברים-ידידים, זוגות שרוצים לחזק את מערכת היחסים</div></div><div class='step-item'><div class='step-number'>5</div><div class='step-text'>התקשרות והזמנה</div></div></div></div></section><section class='video-section'><h2 class='video-title'>בואו נתחיל לתכנן את החלומות שלכם<br>אני רוצן אשמח!</h2><div class='video-container'><div class='video-wrapper'><iframe src='https://www.youtube.com/embed/placeholder' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div></div></section><section class='contact-cta-section'><h2>אני מזמינה אתכם לקבוע איתי בשיחת היכרות בחינם</h2><p>לשיחת היכרות ללא התחייבות</p><div class='social-buttons'><a href='#' class='social-button instagram' aria-label='אינסטגרם'>📷</a><a href='#' class='social-button facebook' aria-label='פייסבוק'>f</a></div><p class='final-cta'>או לקביעת שיחה <a href='/contact'>בעמוד שלי באתר</a></p></section></main><footer><div class='footer-container'><div class='footer-section'><img class='footer-logo' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgODAwIDYwMCI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2Y4ZmFmYyIvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZTJlOGYwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNiZykiLz4KICAgICAgPHJlY3QgeD0iMzIwIiB5PSIyMjAiIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIiByeD0iMjAiIGZpbGw9IiM2MTYxRkYiIG9wYWNpdHk9IjAuMTUiLz4KICAgICAgPHRleHQgeD0iNDAwIiB5PSIzMTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjE2MUZGIj5aPC90ZXh0PgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjQyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzY0NzQ4YiI+16jXl9ec15kg16fXldep15kg15HXqiDXl9efPC90ZXh0PgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjQ1MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzk0YTNiOCI+Q2xpY2sgdG8gcmVwbGFjZSBpbWFnZTwvdGV4dD4KICAgIDwvc3ZnPg==" alt='רחלי קושי-בת-חן'><div class='footer-social'><a href='#' aria-label='פייסבוק'>f</a><a href='#' aria-label='אינסטגרם'>📷</a><a href='#' aria-label='אימייל'>✉</a></div></div><div class='footer-section'><h3>עמודים</h3><ul><li><a href='/'>בית</a></li><li><a href='/about-me'>אודות</a></li><li><a href='/coaching'>אימון אישי</a></li><li><a href='/business-coaching'>אימון עסקי</a></li><li><a href='/couples'>אימון זוגי</a></li><li><a href='/small-biz'>כנס עסקים בכפר סבא</a></li><li><a href='/podcasts'>פודקאסטים</a></li><li><a href='/contact'>צור קשר</a></li></ul></div><div class='footer-section'><h3>קטגוריות</h3><ul><li><a href='#'>אימון אישי</a></li><li><a href='#'>אימון עסקי</a></li><li><a href='#'>אימון זוגי</a></li><li><a href='#'>כנסים וסדנאות</a></li><li><a href='#'>ליגת האלופות</a></li><li><a href='#'>ליגת העל</a></li><li><a href='#'>פודקאסטים</a></li><li><a href='#'>מאמרים</a></li></ul></div></div><div class='footer-bottom'><p>© 2024 רחלי קושי-בת-חן. כל הזכויות שמורות.</p></div></footer><script>document.querySelector('.mobile-menu-toggle').addEventListener('click', function() { document.querySelector('nav').classList.toggle('active'); });</script>
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
+    <script src="/script.js"></script>
+</body></html>

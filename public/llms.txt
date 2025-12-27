@@ -1,0 +1,78 @@
+# Business — Generative Engine Optimization Map
+
+> A Personal and Business Coaching business.
+
+---
+
+## Pages
+
+### Home
+https://-e6eee1d9.zappy5.app
+מאמנת אישית ועסקית מוסמכת המתמחה באימון אישי, אימון עסקי ואימון זוגי. מובילה סדנאות ופודקאסטים לפיתוח אישי ומקצועי.
+
+### אודות
+https://-e6eee1d9.zappy5.app/about-me
+מאמנת אישית ועסקית עם למעלה מ-17 שנות ניסיון בליווי אנשים בתהליכי שינוי מעמיקים. מתמחה באימון אישי, אימון עסקי, אימון זוגי, וליווי נשים.
+
+### אימון אישי
+https://-e6eee1d9.zappy5.app/coaching
+מאמנת אישית ועסקית המתמחה באימון אישי, אימון עסקי, אימון זוגי ופיתוח מקצועי. מספקת כלים להשגת יעדים, ניהול זמן, פיתוח קריירה והעצמה אישית.
+
+### אימון עסקי
+https://-e6eee1d9.zappy5.app/business-coaching
+אימון אישי ועסקי - ליווי מקצועי להשגת יעדים עסקיים, הגדלת מכירות ורווחים, ניהול עסק מוצלח
+
+### אימון זוגי
+https://-e6eee1d9.zappy5.app/couples
+מאמנת אישית, עסקית וזוגית המתמחה באימון NLP ומציעה שירותי אימון מקצועיים לזוגות, עסקים ויחידים
+
+### כנס עסקים בכפר סבא
+https://-e6eee1d9.zappy5.app/small-biz
+מאמנת אישית ועסקית המתמחה באימון אישי, אימון עסקי, אימון זוגי וסדנאות להתפתחות אישית ועסקית. מארגנת כנס עסקים קטנים בכפר סבא עם למעלה מ-2000 בעלי עסקים.
+
+### ליגת האלופות
+https://-e6eee1d9.zappy5.app/%d7%a1%d7%93%d7%a0%d7%aa-%d7%9c%d7%99%d7%92%d7%aa-%d7%94%d7%90%d7%9c%d7%95%d7%a4%d7%95%d7%aa
+אימון אישי ועסקי - ליגת האלופות, תוכנית אימון מקיפה לנשים מצליחות הכוללת 5 מפגשי סדנה, 12 שיעורי זום, קבוצת תמיכה ומעטפת אישית למשך 3 חודשים
+
+### פודקאסטים
+https://-e6eee1d9.zappy5.app/podcasts
+מאמנת אישית ועסקית המתמחה באימון אישי, אימון עסקי, אימון זוגי וסדנאות פיתוח אישי. מציעה פודקאסטים, קורסים וליגות אימון.
+
+### צור קשר
+https://-e6eee1d9.zappy5.app/contact
+מאמנת אישית ועסקית המתמחה באימון, ייעוץ עליון, סדנאות וקבוצות. Goals are dreams with a plan
+
+### ליגת העל
+https://-e6eee1d9.zappy5.app/%d7%a7%d7%9e%d7%a4%d7%95%d7%a1-%d7%9b%d7%a4%d7%a8-%d7%a1%d7%91%d7%90-%d7%a1%d7%93%d7%a0%d7%aa-%d7%90%d7%99%d7%9e%d7%95%d7%9f
+הכשרה לנשים יזמיות ובעלות עסקים קטנים ובינוניים - ליגת העל. קורס בן 5 מפגשים מקצועיים לייעול עסקי ופיתוח מיומנויות ניהול.
+
+## Legal & Policy
+
+### Privacy Policy
+https://-e6eee1d9.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-e6eee1d9.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-e6eee1d9.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+Business is a business in the Personal and Business Coaching industry.
+
+## Industry
+Personal and Business Coaching
+
+---
+
+# Additional Resources
+
+- **Sitemap**: https://-e6eee1d9.zappy5.app/sitemap.xml
+- **Robots.txt**: https://-e6eee1d9.zappy5.app/robots.txt

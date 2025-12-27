@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang='he' dir='rtl'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>רחל אילוש - Home</title><style>
+
+/* Zappy Full-Width Override - outermost structure only */
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* Only direct children of body - the main page wrapper */
+body > header,
+body > main,
+body > footer,
+body > section,
+body > nav,
+body > article,
+body > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; } html, body { width: 100%; min-height: 100vh; overflow-x: hidden; font-family: 'Heebo', Arial, sans-serif; } :root { --primary-gold: #D4AF37; --dark-bg: #1a1a1a; --light-bg: #f5f5f5; --purple-bg: #5a5268; --text-dark: #333; --text-light: #fff; } body { direction: rtl; } .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; } header { background: #000; padding: 10px 0; position: fixed; width: 100%; top: 0; z-index: 1000; } .header-top { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; } .logo-img { height: 60px; } .social-icons { display: flex; gap: 15px; align-items: center; } .social-icons a { color: var(--text-light); font-size: 18px; text-decoration: none; } nav { background: #000; border-top: 1px solid #333; } .nav-menu { display: flex; justify-content: center; list-style: none; gap: 30px; padding: 15px 0; } .nav-menu a { color: var(--text-light); text-decoration: none; font-size: 14px; transition: color 0.3s; } .nav-menu a:hover { color: var(--primary-gold); } .mobile-menu-toggle { display: none; background: none; border: none; color: var(--text-light); font-size: 24px; cursor: pointer; } .hero-section { width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; margin-top: 100px; } .hero-grid { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; height: 80vh; gap: 0; } .hero-item { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; } .hero-item.gold-pattern { background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 100%); position: relative; } .hero-item.gold-pattern::before { content: ''; position: absolute; width: 100%; height: 100%; background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.1) 10px, rgba(255,255,255,0.1) 20px); } .hero-item.black-pattern { background: #000; position: relative; } .hero-item.black-pattern::before { content: ''; position: absolute; width: 100%; height: 100%; background-image: linear-gradient(30deg, transparent 40%, rgba(212,175,55,0.1) 40%, rgba(212,175,55,0.1) 60%, transparent 60%); background-size: 100px 100px; } .hero-btn { background: transparent; border: 2px solid var(--text-light); color: var(--text-light); padding: 15px 40px; font-size: 18px; cursor: pointer; transition: all 0.3s; z-index: 2; } .hero-btn:hover { background: var(--text-light); color: #000; } .hero-image { width: 100%; height: 100%; object-fit: cover; } .quote-section { background: var(--dark-bg); color: var(--text-light); padding: 60px 20px; text-align: center; width: 100%; } .quote-section h2 { font-size: 32px; font-weight: 300; margin-bottom: 20px; font-style: italic; } .quote-section p { font-size: 18px; color: #999; } .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; } .service-item { position: relative; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; } .service-bg { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; } .service-overlay { position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; } .service-btn { background: transparent; border: 2px solid var(--text-light); color: var(--text-light); padding: 15px 40px; font-size: 18px; cursor: pointer; transition: all 0.3s; z-index: 2; } .service-btn:hover { background: var(--text-light); color: #000; } .purple-section { background: var(--purple-bg); padding: 80px 20px; text-align: center; width: 100%; position: relative; overflow: hidden; } .purple-section::before, .purple-section::after { content: ''; position: absolute; width: 200px; height: 200px; background: var(--primary-gold); opacity: 0.3; border-radius: 50%; } .purple-section::before { top: -100px; right: 50px; } .purple-section::after { bottom: -100px; left: 50px; } .purple-content { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; } .purple-section h2 { color: var(--text-light); font-size: 28px; margin-bottom: 30px; line-height: 1.6; } .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin: 40px auto; max-width: 600px; } .calendar-day { background: var(--text-light); padding: 15px; text-align: center; font-size: 14px; color: var(--text-dark); border-radius: 5px; } .calendar-day.header { background: var(--dark-bg); color: var(--text-light); font-weight: bold; } .cta-btn { background: var(--text-light); border: none; color: var(--text-dark); padding: 15px 40px; font-size: 16px; cursor: pointer; transition: all 0.3s; margin-top: 20px; } .cta-btn:hover { background: var(--primary-gold); } .testimonials-section { background: var(--dark-bg); color: var(--text-light); padding: 80px 20px; width: 100%; } .testimonials-section h2 { text-align: center; font-size: 32px; margin-bottom: 50px; } .testimonials-content { max-width: 900px; margin: 0 auto; } .testimonials-text { text-align: center; line-height: 1.8; font-size: 16px; margin-bottom: 40px; columns: 2; column-gap: 40px; text-align: right; } .media-section { background: var(--light-bg); padding: 80px 20px; width: 100%; } .media-section h2 { text-align: center; font-size: 32px; margin-bottom: 50px; } .media-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; } .media-item { background: var(--text-light); padding: 30px; text-align: center; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); } .media-logo { width: 120px; height: 80px; margin: 0 auto 20px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 5px; } .media-logo.maariv { background: #e31e24; color: white; font-weight: bold; font-size: 24px; } .media-logo.ynet { background: #0066cc; color: white; font-weight: bold; font-size: 24px; } .media-logo.calcalist { border: 2px solid #000; } .media-logo.globes { background: #c8102e; color: white; font-weight: bold; font-size: 20px; } .media-item p { font-size: 14px; line-height: 1.6; margin-bottom: 20px; } .media-btn { background: var(--dark-bg); border: none; color: var(--text-light); padding: 12px 30px; font-size: 14px; cursor: pointer; transition: all 0.3s; } .media-btn:hover { background: var(--primary-gold); } .contact-section { background: var(--purple-bg); padding: 80px 20px; width: 100%; display: flex; align-items: center; position: relative; } .contact-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1200px; margin: 0 auto; width: 100%; align-items: center; } .contact-text { color: var(--text-light); } .contact-text h2 { font-size: 36px; margin-bottom: 20px; line-height: 1.4; } .contact-image { width: 100%; height: 500px; object-fit: cover; border-radius: 10px; } .contact-form { background: var(--text-light); padding: 40px; border-radius: 10px; } .contact-form h3 { font-size: 24px; margin-bottom: 20px; text-align: center; } .form-group { margin-bottom: 20px; } .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; } .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; font-family: inherit; } .form-group textarea { min-height: 100px; resize: vertical; } .form-group label { display: block; margin-bottom: 5px; font-size: 14px; } .submit-btn { background: var(--dark-bg); border: none; color: var(--text-light); padding: 15px 40px; font-size: 16px; cursor: pointer; width: 100%; transition: all 0.3s; } .submit-btn:hover { background: var(--primary-gold); } footer { background: #000; color: var(--text-light); padding: 40px 20px 20px; width: 100%; } .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 30px; } .footer-column h4 { font-size: 18px; margin-bottom: 15px; color: var(--primary-gold); } .footer-column ul { list-style: none; } .footer-column ul li { margin-bottom: 10px; } .footer-column ul li a { color: var(--text-light); text-decoration: none; font-size: 14px; } .footer-column ul li a:hover { color: var(--primary-gold); } .footer-logo { text-align: center; margin-bottom: 20px; } .footer-logo img { height: 80px; } .footer-social { display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; } .footer-social a { color: var(--text-light); font-size: 20px; text-decoration: none; } .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #333; font-size: 12px; color: #999; } @media (max-width: 768px) { .mobile-menu-toggle { display: block; } .nav-menu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: #000; padding: 20px; } .nav-menu.active { display: flex; } .hero-grid { grid-template-columns: 1fr; height: auto; } .hero-item { height: 300px; } .services-grid { grid-template-columns: 1fr; } .calendar-grid { grid-template-columns: repeat(4, 1fr); } .testimonials-text { columns: 1; } .media-grid { grid-template-columns: 1fr; } .contact-content { grid-template-columns: 1fr; } .contact-image { height: 300px; } .footer-content { grid-template-columns: 1fr; text-align: center; } }</style><!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'e6eee1d9-f33c-4f29-8aec-97b218c63f5c',
+    apiUrl: 'http://localhost:5001/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head><body><header><div class='header-top'><div class='social-icons'><a href='mailto:info@rachelilushi.co.il'>✉</a><a href='#'>f</a><a href='#'>📷</a></div><img src="/assets/site-home-image-6.webp" alt='רחל אילוש' class='logo-img'><button class='mobile-menu-toggle' onclick='toggleMenu()'>☰</button></div><nav><ul class='nav-menu' id='navMenu'><li><a href='/'>דף הבית</a></li><li><a href='/about-me'>אודות</a></li><li><a href='/coaching'>אימון אישי</a></li><li><a href='/business-coaching'>אימון עסקי</a></li><li><a href='/couples'>אימון זוגי</a></li><li><a href='/small-biz'>כנס עסקים</a></li><li><a href='/%d7%a1%d7%93%d7%a0%d7%aa-%d7%9c%d7%99%d7%92%d7%aa-%d7%94%d7%90%d7%9c%d7%95%d7%a4%d7%95%d7%aa'>ליגת האלופות</a></li><li><a href='/podcasts'>פודקאסטים</a></li><li><a href='/contact'>צור קשר</a></li></ul></nav></header><main><section class='hero-section'><div class='hero-grid'><div class='hero-item gold-pattern'><button class='hero-btn'>אימון עסקי</button></div><div class='hero-item'><img src="/assets/site-home-image-1.webp" alt='רחל אילוש' class='hero-image'></div><div class='hero-item black-pattern'><button class='hero-btn'>אימון אישי</button></div></div></section><section class='quote-section'><div class='container'><h2>״אנחנו לא מפחדים מהאתגרים, אנחנו מפחדים מהשינוי״</h2><p>רחל אילוש - מאמנת אישית ועסקית מוסמכת</p></div></section><section class='services-grid'><div class='service-item'><img src="/assets/site-home-image-2.webp" alt='אימון עסקי' class='service-bg'><div class='service-overlay'><button class='service-btn'>אימון עסקי</button></div></div><div class='service-item'><img src="/assets/site-home-image-3.webp" alt='אימון אישי' class='service-bg'><div class='service-overlay'><button class='service-btn'>אימון אישי</button></div></div><div class='service-item'><img src="/assets/site-home-image-4.webp" alt='אימון זוגי' class='service-bg'><div class='service-overlay'><button class='service-btn'>אימון זוגי</button></div></div></section><section class='purple-section'><div class='purple-content'><h2>האם אתם מוכנים לשינוי? האם אתם מוכנים להתחיל את המסע שלכם?<br>בואו נתחיל ביחד את הדרך להצלחה</h2><div class='calendar-grid'><div class='calendar-day header'>א</div><div class='calendar-day header'>ב</div><div class='calendar-day header'>ג</div><div class='calendar-day header'>ד</div><div class='calendar-day header'>ה</div><div class='calendar-day header'>ו</div><div class='calendar-day header'>ש</div><div class='calendar-day'>1</div><div class='calendar-day'>2</div><div class='calendar-day'>3</div><div class='calendar-day'>4</div><div class='calendar-day'>5</div><div class='calendar-day'>6</div><div class='calendar-day'>7</div><div class='calendar-day'>8</div><div class='calendar-day'>9</div><div class='calendar-day'>10</div><div class='calendar-day'>11</div><div class='calendar-day'>12</div><div class='calendar-day'>13</div><div class='calendar-day'>14</div><div class='calendar-day'>15</div><div class='calendar-day'>16</div><div class='calendar-day'>17</div><div class='calendar-day'>18</div><div class='calendar-day'>19</div><div class='calendar-day'>20</div><div class='calendar-day'>21</div></div><button class='cta-btn'>קבעו פגישת ייעוץ</button></div></section><section class='testimonials-section'><div class='container'><h2>מה אומרים עליי מאמנים מהמובילים בארץ</h2><div class='testimonials-content'><div class='testimonials-text'><p>רחל היא מאמנת מקצועית ברמה הגבוהה ביותר. היא מביאה איתה ניסיון עשיר, ידע רחב ויכולת להתחבר לאנשים ברמה האנושית. העבודה איתה הייתה מעשירה ומאתגרת, והיא הצליחה להוציא ממני את המיטב. אני ממליץ עליה בחום לכל מי שמחפש שינוי אמיתי בחיים.</p><p>רחל היא אחת המאמנות המובילות בישראל. היא משלבת בצורה מושלמת בין אימון אישי לעסקי, ומצליחה להביא תוצאות מדהימות. העבודה איתה שינתה את החיים שלי לטובה, והיא עזרה לי להגשים חלומות שחשבתי שהם בלתי אפשריים.</p></div></div></div></section><section class='media-section'><div class='container'><h2>סדנאות</h2><div class='media-grid'><div class='media-item'><div class='media-logo'><img src="/assets/site-home-image-7.webp" alt='לוגו' style='width:100%;height:100%;object-fit:contain;'></div><p>סדנת אימון אישי מתקדמת לפיתוח מיומנויות מנהיגות ויזמות</p><button class='media-btn'>לפרטים נוספים</button></div><div class='media-item'><div class='media-logo maariv'>MAARIV</div><p>סדנת אימון עסקי לבעלי עסקים קטנים ובינוניים</p><button class='media-btn'>לפרטים נוספים</button></div><div class='media-item'><div class='media-logo calcalist'><img src="/assets/site-home-image-8.webp" alt='כלכליסט' style='width:100%;height:100%;object-fit:contain;'></div><p>סדנת פיתוח אישי ומקצועי למנהלים ויזמים</p><button class='media-btn'>לפרטים נוספים</button></div><div class='media-item'><div class='media-logo globes'>GLOBES</div><p>סדנת אימון זוגי לחיזוק הקשר והתקשורת</p><button class='media-btn'>לפרטים נוספים</button></div></div></div></section><section class='contact-section'><div class='contact-content'><div class='contact-text'><h2>לא צריכים לחכות לעוד יום<br>התחילו עכשיו!</h2></div><div><img src="/assets/site-home-image-5.webp" alt='רחל אילוש' class='contact-image'></div></div></section><section style='background:#fff;padding:60px 20px;'><div class='contact-form' style='max-width:600px;margin:0 auto;'><h3>צרו קשר היום ונתחיל במסע המשותף</h3><form><div class='form-row'><div class='form-group'><input type='text' placeholder='שם מלא' required></div><div class='form-group'><input type='email' placeholder='אימייל' required></div></div><div class='form-group'><input type='tel' placeholder='טלפון' required></div><div class='form-group'><textarea placeholder='הודעה'></textarea></div><button type='submit' class='submit-btn'>שלח</button></form></div></section><footer><div class='footer-content'><div class='footer-column'><h4>עמודים</h4><ul><li><a href='/'>דף הבית</a></li><li><a href='/about-me'>אודות</a></li><li><a href='/coaching'>אימון אישי</a></li><li><a href='/business-coaching'>אימון עסקי</a></li><li><a href='/couples'>אימון זוגי</a></li></ul></div><div class='footer-column'><h4>שירותים</h4><ul><li><a href='/small-biz'>כנס עסקים</a></li><li><a href='/%d7%a1%d7%93%d7%a0%d7%aa-%d7%9c%d7%99%d7%92%d7%aa-%d7%94%d7%90%d7%9c%d7%95%d7%a4%d7%95%d7%aa'>ליגת האלופות</a></li><li><a href='/%d7%a7%d7%9e%d7%a4%d7%95%d7%a1-%d7%9b%d7%a4%d7%a8-%d7%a1%d7%91%d7%90-%d7%a1%d7%93%d7%a0%d7%aa-%d7%90%d7%99%d7%9e%d7%95%d7%9f'>ליגת העל</a></li><li><a href='/podcasts'>פודקאסטים</a></li><li><a href='/contact'>צור קשר</a></li></ul></div><div class='footer-column'><h4>יצירת קשר</h4><ul><li><a href='mailto:info@rachelilushi.co.il'>info@rachelilushi.co.il</a></li><li><a href='tel:0501234567'>050-123-4567</a></li></ul></div></div><div class='footer-logo'><img src="/assets/site-home-image-9.webp" alt='רחל אילוש'></div><div class='footer-social'><a href='mailto:info@rachelilushi.co.il'>✉</a><a href='#'>f</a><a href='#'>📷</a></div><div class='footer-bottom'><p>© 2024 רחל אילוש - כל הזכויות שמורות</p></div></footer></main><script>function toggleMenu() { const menu = document.getElementById('navMenu'); menu.classList.toggle('active'); }</script>
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
+    <script src="/script.js"></script>
+</body></html>

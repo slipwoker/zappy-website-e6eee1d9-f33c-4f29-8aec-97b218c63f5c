@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang='he' dir='rtl'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>רחלי לוטשי-ברקת - אימון אישי</title><style>
+
+/* Zappy Full-Width Override - outermost structure only */
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* Only direct children of body - the main page wrapper */
+body > header,
+body > main,
+body > footer,
+body > section,
+body > nav,
+body > article,
+body > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; } html, body { width: 100%; min-height: 100vh; overflow-x: hidden; font-family: 'Heebo', 'Arial', sans-serif; } :root { --primary-color: #7a9d96; --secondary-color: #f5f5f5; --text-dark: #333; --text-light: #666; --gold: #d4af37; } body { background: #fff; color: var(--text-dark); line-height: 1.6; } .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; } header { background: #000; color: #fff; padding: 10px 0; position: relative; z-index: 1000; } .header-top { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; } .logo { background: #fff; padding: 10px 20px; transform: skewY(-2deg); } .logo-text { color: #000; font-size: 24px; font-weight: bold; display: block; } .logo-subtitle { color: #666; font-size: 12px; display: block; } nav ul { display: flex; list-style: none; gap: 30px; } nav a { color: #fff; text-decoration: none; font-size: 14px; transition: color 0.3s; } nav a:hover { color: var(--gold); } .social-icons { display: flex; gap: 15px; } .social-icons a { color: #fff; font-size: 16px; text-decoration: none; } .mobile-menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 24px; cursor: pointer; } .hero-section { background: var(--primary-color); color: #fff; text-align: center; padding: 80px 20px; position: relative; overflow: hidden; width: 100%; } .hero-section h1 { font-size: 48px; font-weight: 300; margin-bottom: 20px; } .decorative-element { position: absolute; width: 200px; height: auto; } .decorative-left { left: 0; top: 50%; transform: translateY(-50%); } .decorative-right { right: 0; bottom: 0; } .content-section { background: var(--secondary-color); padding: 60px 20px; text-align: center; width: 100%; } .content-section h2 { font-size: 32px; color: var(--text-dark); margin-bottom: 30px; font-weight: 300; } .content-section p { color: var(--text-light); max-width: 800px; margin: 0 auto 20px; line-height: 1.8; font-size: 16px; } .icon-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; max-width: 1000px; margin: 40px auto; } .icon-box { background: #fff; padding: 30px 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; } .icon-box:hover { transform: translateY(-5px); } .icon-box svg { width: 50px; height: 50px; margin-bottom: 15px; fill: var(--primary-color); } .icon-box p { font-size: 14px; color: var(--text-dark); } .partners-section { background: #fff; padding: 40px 20px; text-align: center; width: 100%; } .partners-logos { display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; } .partner-logo { height: 40px; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s; } .partner-logo:hover { opacity: 1; filter: grayscale(0%); } .benefits-section { background: #2a2a2a; color: #fff; padding: 80px 20px; text-align: center; width: 100%; } .benefits-section h2 { font-size: 36px; margin-bottom: 20px; font-weight: 300; } .benefits-section p { max-width: 800px; margin: 0 auto 40px; line-height: 1.8; color: #ccc; } .profile-section { background: #666; padding: 80px 20px; text-align: center; width: 100%; } .profile-section h2 { color: #fff; font-size: 32px; margin-bottom: 20px; font-weight: 300; } .profile-section p { color: #ddd; max-width: 700px; margin: 0 auto 40px; line-height: 1.8; } .profile-image { width: 300px; height: 300px; border-radius: 50%; margin: 0 auto 40px; overflow: hidden; border: 8px solid #fff; } .profile-image img { width: 100%; height: 100%; object-fit: cover; } .features-list { max-width: 600px; margin: 0 auto; text-align: right; } .feature-item { background: rgba(255,255,255,0.1); padding: 20px; margin-bottom: 15px; border-radius: 8px; display: flex; align-items: center; gap: 15px; } .feature-icon { width: 30px; height: 30px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; } .feature-icon::before { content: '✓'; color: #fff; font-weight: bold; } .feature-text { color: #fff; text-align: right; flex: 1; } .cta-section { background: var(--secondary-color); padding: 60px 20px; text-align: center; width: 100%; } .cta-section h3 { font-size: 28px; margin-bottom: 30px; color: var(--text-dark); } .full-width-image { width: 100%; height: 500px; overflow: hidden; } .full-width-image img { width: 100%; height: 100%; object-fit: cover; } .final-cta { background: #fff; padding: 60px 20px; text-align: center; width: 100%; } .final-cta p { font-size: 18px; margin-bottom: 20px; color: var(--text-dark); } .social-buttons { display: flex; gap: 20px; justify-content: center; margin-bottom: 30px; } .social-btn { width: 50px; height: 50px; border-radius: 50%; background: #333; color: #fff; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: background 0.3s; } .social-btn:hover { background: var(--primary-color); } .link-text { color: var(--primary-color); font-size: 16px; text-decoration: none; } .link-text:hover { text-decoration: underline; } footer { background: #000; color: #fff; padding: 60px 20px 20px; width: 100%; } .footer-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1200px; margin: 0 auto 40px; } .footer-logo { max-width: 200px; } .footer-section h4 { color: var(--primary-color); margin-bottom: 20px; font-size: 18px; } .footer-section ul { list-style: none; } .footer-section ul li { margin-bottom: 10px; } .footer-section a { color: #ccc; text-decoration: none; font-size: 14px; transition: color 0.3s; } .footer-section a:hover { color: #fff; } .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #333; color: #666; font-size: 12px; } @media (max-width: 768px) { nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #000; padding: 20px; } nav.active { display: block; } nav ul { flex-direction: column; gap: 15px; } .mobile-menu-toggle { display: block; } .hero-section h1 { font-size: 32px; } .icon-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; } .content-section h2 { font-size: 24px; } .benefits-section h2 { font-size: 28px; } .profile-section h2 { font-size: 24px; } .profile-image { width: 200px; height: 200px; } .footer-content { grid-template-columns: 1fr; gap: 30px; } .decorative-element { width: 100px; } .full-width-image { height: 300px; } }</style><!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'e6eee1d9-f33c-4f29-8aec-97b218c63f5c',
+    apiUrl: 'http://localhost:5001/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head><body><header><div class='header-top'><div class='social-icons'><a href='#'>▤</a><a href='#'>f</a><a href='#'>📷</a></div><div class='logo'><span class='logo-text'>רחלי<br>לוטשי-ברקת</span><span class='logo-subtitle'>אימון אישי ועסקי</span></div><button class='mobile-menu-toggle' onclick='toggleMenu()'>☰</button><nav id='mainNav'><ul><li><a href='/'>בית</a></li><li><a href='/contact'>צור קשר</a></li><li><a href='/podcasts'>פודקאסטים</a></li><li><a href='/%d7%a7%d7%9e%d7%a4%d7%95%d7%a1-%d7%9b%d7%a4%d7%a8-%d7%a1%d7%91%d7%90-%d7%a1%d7%93%d7%a0%d7%aa-%d7%90%d7%99%d7%9e%d7%95%d7%9f'>ליגת העל</a></li><li><a href='/%d7%a1%d7%93%d7%a0%d7%aa-%d7%9c%d7%99%d7%92%d7%aa-%d7%94%d7%90%d7%9c%d7%95%d7%a4%d7%95%d7%aa'>ליגת האלופות</a></li><li><a href='/small-biz'>כנס עסקים</a></li><li><a href='/couples'>אימון זוגי</a></li><li><a href='/business-coaching'>אימון עסקי</a></li><li><a href='/coaching'>אימון אישי</a></li><li><a href='/about-me'>אודות</a></li></ul></nav></div></header><main><section class='hero-section'><svg class='decorative-element decorative-left' viewBox='0 0 200 400'><path d='M0,0 L50,100 L0,200 L50,300 L0,400' stroke='#d4af37' stroke-width='3' fill='none'/><path d='M20,50 L70,150 L20,250 L70,350' stroke='#d4af37' stroke-width='3' fill='none'/></svg><h1>אימון אישי</h1><svg class='decorative-element decorative-right' viewBox='0 0 200 400'><path d='M200,0 L150,100 L200,200 L150,300 L200,400' stroke='#d4af37' stroke-width='3' fill='none'/><path d='M180,50 L130,150 L180,250 L130,350' stroke='#d4af37' stroke-width='3' fill='none'/></svg></section><section class='content-section'><div class='container'><h2>מהו בעצם אימון אישי?</h2><p>אימון אישי הוא תהליך מעניין מאוד שבו אדם נעזר במומחה לצורך שינוי, התפתחות אלינו במטרה להגיע ליעדים.</p><p>כל אחד מאיתנו בתקופות מסוימות בחיינו, נתקע בנקודה מסוימת שהוא רוצה לשנות, מרגיש שהוא צריך להתקדם לכיוון אחר או שהוא בעצם שואל את עצמו ומה עכשיו? ואם אני בעצם עושה את מה שאני רוצה לעשות? לאן אני הולך? אני רוצה להיות? איך אני רוצה לחיות? באימון אישי נעזרים במומחה שיודע להקשיב, לשאול, לתמוך, להעלות, לשקף, לבחון ולהעצים.</p></div><div class='icon-grid'><div class='icon-box'><svg viewBox='0 0 50 50'><rect x='10' y='15' width='30' height='25' rx='2' fill='currentColor'/><path d='M15,20 L35,20 M15,25 L35,25 M15,30 L30,30' stroke='#fff' stroke-width='2'/></svg><p>תכנון<br>אסטרטגי</p></div><div class='icon-box'><svg viewBox='0 0 50 50'><circle cx='25' cy='25' r='15' fill='currentColor'/><path d='M25,15 L25,25 L32,25' stroke='#fff' stroke-width='2'/></svg><p>ניהול<br>זמן</p></div><div class='icon-box'><svg viewBox='0 0 50 50'><path d='M25,10 L30,20 L40,22 L32,30 L34,40 L25,35 L16,40 L18,30 L10,22 L20,20 Z' fill='currentColor'/></svg><p>הצלחה<br>אישית</p></div><div class='icon-box'><svg viewBox='0 0 50 50'><circle cx='25' cy='20' r='8' fill='currentColor'/><path d='M15,35 Q15,28 25,28 Q35,28 35,35 L35,40 L15,40 Z' fill='currentColor'/></svg><p>פיתוח<br>אישי</p></div><div class='icon-box'><svg viewBox='0 0 50 50'><path d='M10,30 L20,20 L30,25 L40,15' stroke='currentColor' stroke-width='3' fill='none'/><circle cx='20' cy='20' r='2' fill='currentColor'/><circle cx='30' cy='25' r='2' fill='currentColor'/><circle cx='40' cy='15' r='2' fill='currentColor'/></svg><p>צמיחה<br>מקצועית</p></div><div class='icon-box'><svg viewBox='0 0 50 50'><path d='M25,10 L30,22 L42,22 L33,30 L37,42 L25,34 L13,42 L17,30 L8,22 L20,22 Z' fill='currentColor'/></svg><p>השגת<br>יעדים</p></div></div><div class='partners-section'><div class='partners-logos'><svg class='partner-logo' viewBox='0 0 100 40'><text x='50' y='25' text-anchor='middle' font-size='16' fill='#666'>Nespresso</text></svg><svg class='partner-logo' viewBox='0 0 100 40'><text x='50' y='25' text-anchor='middle' font-size='16' fill='#666'>Walla</text></svg><svg class='partner-logo' viewBox='0 0 100 40'><text x='50' y='25' text-anchor='middle' font-size='16' fill='#666'>Strauss</text></svg><svg class='partner-logo' viewBox='0 0 100 40'><text x='50' y='25' text-anchor='middle' font-size='16' fill='#666'>Ynet</text></svg><svg class='partner-logo' viewBox='0 0 100 40'><text x='50' y='25' text-anchor='middle' font-size='16' fill='#666'>Mako</text></svg></div></div></section><section class='benefits-section'><div class='container'><h2>מה ניתן להשיג בעזרת אימון אישי</h2><p>באימון האישי אנחנו יכולים לעבוד על כל תחום בחיים ושאתם רוצים להתקדם בו.</p><p>המטרות יכול שיהיו בתחום הקריירה, תפקיד, מעבר תפקיד, קידום, התמודדות עם אתגרים בעבודה, ניהול זמן, אסרטיביות, הכנה לראיון עבודה, ניהול קונפליקטים, ניהול שינויים, שיפור תקשורת, העצמת ביטחון עצמי ועוד.</p></div></section><section class='profile-section'><div class='container'><h2>למי מתאים אימון אישי</h2><p>אימון אישי מתאים לכל מי שרוצה לקחת שליטה שיטתית, תהליכית, הדרגתית או שיפור בחייו והמוכן לקבוע ולעבוד על זה.</p><div class='profile-image'><img src="/assets/site-home-image-14.webp" alt='רחלי לוטשי ברקת'></div><div class='features-list'><div class='feature-item'><div class='feature-icon'></div><div class='feature-text'>להתמקד בי ובמטרות שלי</div></div><div class='feature-item'><div class='feature-icon'></div><div class='feature-text'>לקבל כלי שיעזרו לי להגיע לשם שאני רוצה להיות ולעשות את מה שאני רוצה לעשות</div></div><div class='feature-item'><div class='feature-icon'></div><div class='feature-text'>לקבל תמיכה והעצמה מקצועית מהמומחה שמתמחה בתחום</div></div><div class='feature-item'><div class='feature-icon'></div><div class='feature-text'>לקבל תהליך מובנה שיעזור לי להגיע למטרות שלי</div></div><div class='feature-item'><div class='feature-icon'></div><div class='feature-text'>לקבל אחריות על התהליך שלי ולהתקדם בקצב שלי ולפי הצרכים שלי</div></div><div class='feature-item'><div class='feature-icon'></div><div class='feature-text'>אם אתה/את מוכנ/ה לתהליך</div></div></div></div></section><section class='cta-section'><div class='container'><h3>בואו נדבר על הכל<br>והתחלת התהליך</h3></div></section><section class='full-width-image'><img src="/assets/site-home-image-15.webp" alt='משרד אימון'></section><section class='final-cta'><div class='container'><p>אני מזמינה אותכם לקבוע שיחת היכרות והתחלת התהליך</p><div class='social-buttons'><a href='#' class='social-btn'>📷</a><a href='#' class='social-btn'>f</a></div><p>או לקבוע איתי <a href='#' class='link-text'>שיחת ייעוץ בטלפון</a></p></div></section></main><footer><div class='footer-content'><div class='footer-section'><h4>קטגוריות</h4><ul><li><a href='/'>בית</a></li><li><a href='/about-me'>אודות</a></li><li><a href='/coaching'>אימון אישי</a></li><li><a href='/business-coaching'>אימון עסקי</a></li><li><a href='/couples'>אימון זוגי</a></li><li><a href='/small-biz'>כנס עסקים</a></li><li><a href='/%d7%a1%d7%93%d7%a0%d7%aa-%d7%9c%d7%99%d7%92%d7%aa-%d7%94%d7%90%d7%9c%d7%95%d7%a4%d7%95%d7%aa'>ליגת האלופות</a></li><li><a href='/podcasts'>פודקאסטים</a></li><li><a href='/contact'>צור קשר</a></li></ul></div><div class='footer-section'><h4>עמודים</h4><ul><li><a href='#'>אימון אישי</a></li><li><a href='#'>אימון עסקי</a></li><li><a href='#'>אימון זוגי</a></li><li><a href='#'>כנס עסקים קטנים</a></li><li><a href='#'>ליגת האלופות</a></li><li><a href='#'>ליגת העל</a></li><li><a href='#'>פודקאסטים</a></li><li><a href='#'>צור קשר</a></li><li><a href='#'>אודות</a></li></ul></div></div><div class='footer-logo'><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgODAwIDYwMCI+CiAgICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2Y4ZmFmYyIvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZTJlOGYwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgPC9kZWZzPgogICAgICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNiZykiLz4KICAgICAgPHJlY3QgeD0iMzIwIiB5PSIyMjAiIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIiByeD0iMjAiIGZpbGw9IiM2MTYxRkYiIG9wYWNpdHk9IjAuMTUiLz4KICAgICAgPHRleHQgeD0iNDAwIiB5PSIzMTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjE2MUZGIj5aPC90ZXh0PgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjQyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzY0NzQ4YiI+16jXl9ec15kg15zXldeY16nXmSDXkdeo16fXqjwvdGV4dD4KICAgICAgPHRleHQgeD0iNDAwIiB5PSI0NTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPkNsaWNrIHRvIHJlcGxhY2UgaW1hZ2U8L3RleHQ+CiAgICA8L3N2Zz4=" alt='רחלי לוטשי ברקת'></div><div class='footer-bottom'><p>© 2024 רחלי לוטשי-ברקת. כל הזכויות שמורות.</p></div></footer><script>function toggleMenu() { const nav = document.getElementById('mainNav'); nav.classList.toggle('active'); }</script>
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
+    <script src="/script.js"></script>
+</body></html>

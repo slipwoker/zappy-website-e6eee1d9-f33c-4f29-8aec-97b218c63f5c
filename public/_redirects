@@ -1,0 +1,22 @@
+# Clean URL redirects for Render static hosting
+# These rewrite rules show clean URLs to users while serving .html files
+
+/about-me  /about-me.html  200
+/coaching  /coaching.html  200
+/business-coaching  /business-coaching.html  200
+/couples  /couples.html  200
+/small-biz  /small-biz.html  200
+/%D7%A1%D7%93%D7%A0%D7%AA-%D7%9C%D7%99%D7%92%D7%AA-%D7%94%D7%90%D7%9C%D7%95%D7%A4%D7%95%D7%AA  /page-7.html  200
+/podcasts  /podcasts.html  200
+/contact  /contact.html  200
+/%D7%A7%D7%9E%D7%A4%D7%95%D7%A1-%D7%9B%D7%A4%D7%A8-%D7%A1%D7%91%D7%90-%D7%A1%D7%93%D7%A0%D7%AA-%D7%90%D7%99%D7%9E%D7%95%D7%9F  /page-10.html  200
+
+# Legal pages - redirect old .html URLs to friendly URLs
+/privacy.html  /privacy  301
+/accessibility.html  /accessibility  301
+/terms.html  /terms  301
+
+/  /index.html  200
+
+# 404 fallback
+/*  /index.html  404
